@@ -1,28 +1,76 @@
-.wrapper {
+body {
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr; /*0px er header*/
 }
 
-.links {
-  grid-column: 1;
-  grid-row: auto;
-
+.body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  overflow: hidden;
 }
 
-.links header {
-  margin-left: 10%;
-  margin-bottom: 10%;
-  margin-top: 10%;
+.content {
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.content img {
+  max-width: 98%;
+  height: auto;
+  padding-bottom: 1%;
+}
+
+.sidebar {
+  width: 275px;
+  padding-top: 12px;
+}
+
+
+.sidebar .header {
   font-family: 'Playfair Display', serif;
   font-size: 25px;
   font-weight: 900;
+  text-decoration: none;
+  color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+
 }
 
-.links a {
+
+
+.sidebar .overview {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: gray;
+  cursor: pointer;
+
+}
+
+.sidebar .overview a {
+  color: gray;
+}
+
+.sidebar .overview a:hover {
+  color: black;
+}
+
+.sidebar a {
   margin-left: 10%;
-  margin-top: 5%;
   font-size: 16px;
   font-family: 'Playfair Display', serif;
   text-decoration: none;
@@ -30,54 +78,52 @@
 
 }
 
-.links p.overview {
-  margin-left: 10%;
-  font-size: 16px;
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  color: gray;
-}
 
-.links p.overview:hover {
+.sidebar:hover > a {
   color: black;
 }
 
-.links:hover > a {
-  color: black;
-}
-
-.links:hover > a:hover {
+.sidebar:hover > a:hover {
   color: gray;
   cursor: pointer;
 }
 
-.links .pers_cont {
+
+.sidebar .film_cont {
+  margin-left: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: none;
+}
+
+.film_cont:hover > a {
+  color: black;
+}
+
+.film_cont:hover > a:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.sidebar .pers_cont {
   margin-left: 4%;
   padding-bottom: 2%;
   padding-top: 2%;
   display: none;
 }
 
-.links .film_cont {
-  margin-left: 4%;
-  padding-bottom: 2%;
-  padding-top: 2%;
-  display: none;
+.pers_cont:hover > a {
+  color: black;
 }
 
-.images {
-  grid-column: 2 / 6;
-  grid-row: auto;
+.pers_cont:hover > a:hover {
+  color: gray;
+  cursor: pointer;
 }
 
-.images img {
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: 3%;
-  width: 97%;
-}
 
-.iglink img {
+
+.sidebar .iglink img {
   width: 15%;
   margin-left: auto;
   margin-right: auto;
