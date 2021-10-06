@@ -41,6 +41,7 @@ body {
 
 .img-photo {
   background-color: black;
+  width: 150% !important;
 }
 
 .text-center:hover img {
@@ -106,14 +107,13 @@ body {
 }
 
 .photos {
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 1%;
+  margin: 1em;
 }
 
 .photos img {
   width: 100%;
   height: auto;
+  margin: 1em;
 }
 .footer {
   margin-bottom: 20px;
