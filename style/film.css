@@ -12,9 +12,55 @@ body {
   background-color: black;
 }
 
+@media (pointer: fine) {
+  .navbar-brand:hover {
+    font-weight: 500;
+  }
+  .nav-link:hover {
+    color: grey !important;
+  }
+  .img-photo {
+    background-color: black;
+  }
+  .text-center:hover img {
+    background-color: black;
+    opacity: 1;
+    transition: 0.3s;
+
+  }
+
+  .text-center:hover .textoverimg {
+    color:white !important;
+    transition: 0.3s;
+  }
+  .text-center {
+    position: relative;
+    background-color: black;
+
+   }
+   .text-center img {
+      opacity: 0.6;
+    }
+    .textoverimg {
+      color: black !important;
+    }
+}
+
 .container-fluid {
   margin: 0 0 0 0 !important;
   padding: 0 0 0 0 !important;
+}
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 30px !important;
+    padding-left: 15px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .textoverimg {
+    font-size: 2rem !important;
+  }
 }
 
 .navbar-brand {
@@ -23,50 +69,28 @@ body {
   font-weight: bold;
 }
 
-.navbar-brand:hover {
-  font-weight: 500;
-}
-
-
 .navbar-nav {
   padding-right: 30px;
-}
-
-.nav-link:hover {
-  color: grey !important;
 }
 
 .nav-link {
   color: white !important;
 }
 
+.navbar {
+  margin-right: 20px !important;
+}
+
 .img-photo {
-  background-color: black;
+
   width: 150% !important;
 }
 
 
-
-.text-center:hover img {
-  background-color: black;
-  opacity: 1;
-  transition: 0.3s;
-
-}
-
-.text-center:hover .textoverimg {
-  color:white;
-  transition: 0.3s;
-}
-
 .text-center {
   position: relative;
-  background-color: black;
+}
 
- }
- .text-center img {
-    opacity: 0.6;
-  }
 .text-center div {
   position: absolute;
   /* VERTICAL CENTER */
@@ -78,7 +102,7 @@ body {
 }
 
 .textoverimg {
-  color: black;
+  color: white;
   font-size: 4rem;
   font-weight: bold;
 }
