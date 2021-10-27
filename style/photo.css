@@ -47,9 +47,22 @@ body {
     }
 }
 
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin-left: 10% !important;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 40px !important;
+  }
+  .nav-link {
+    color: black !important;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar-brand {
-    font-size: 30px !important;
+    font-size: 40px !important;
     padding-left: 15px !important;
   }
   .textoverimg {
@@ -60,6 +73,17 @@ body {
 @media (max-width: 575px) {
   .textoverimg {
     font-size: 2rem !important;
+  }
+  .navbar-nav {
+    margin-left: 10% !important;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    color: black !important;
+    font-size: 30px !important;
+  }
+  .nav-link {
+    color: black !important;
   }
 }
 
@@ -85,9 +109,7 @@ body {
 }
 
 
-.nav-link {
-  color: grey !important;
-}
+
 
 
 
