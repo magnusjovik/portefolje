@@ -19,32 +19,7 @@ body {
   .nav-link:hover {
     color: grey !important;
   }
-  .img-photo {
-    background-color: black;
-  }
-  .text-center:hover img {
-    background-color: black;
-    opacity: 1;
-    transition: 0.3s;
 
-  }
-
-  .text-center:hover .textoverimg {
-    color:white !important;
-    transition: 0.3s;
-  }
-  .text-center {
-    position: relative;
-    background-color: black;
-
-   }
-   .text-center img {
-      opacity: 0.6;
-    }
-    .textoverimg {
-      color: black !important;
-    }
-}
 
 @media (max-width: 992px) {
   .navbar-nav {
@@ -64,15 +39,10 @@ body {
     font-size: 40px !important;
     padding-left: 15px !important;
   }
-  .textoverimg {
-    font-size: 3rem !important;
-  }
 }
 
 @media (max-width: 575px) {
-  .textoverimg {
-    font-size: 2rem !important;
-  }
+
   .navbar-nav {
     margin-left: 10% !important;
     margin-top: 10%;
@@ -113,68 +83,45 @@ body {
   color: black !important;
 }
 
-.img-photo {
-  width: 150% !important;
-}
-
-.text-center {
+.slide {
   position: relative;
- }
-.text-center div {
-  position: absolute;
-  /* VERTICAL CENTER */
-  top: 40%;
-  left: 0;
-  /* HORIZONTAL CENTER */
-  width: 100%;
   text-align: center;
 }
 
-.textoverimg {
-  color: white;
-  font-size: 4rem;
-  font-weight: bold;
-}
+.img {
+  max-height: 80vh;
+  margin-bottom: 3vh;
+  margin-top: 2vh;
 
-.about {
-  text-align: center;
-  font-size: 1.5rem;
-  padding-top: 5%;
-  padding-bottom: 10%;
-}
+  }
 
-.about img {
-  width: 100%;
-  height: auto;
-  padding-left: 10%;
-  padding-right: 10%;
-  max-width: 70%;
-}
+  button {
+    font-size: 4rem;
+    border: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+  }
 
-.contact {
-  text-align: center;
-  font-size: 1.5rem;
-  padding-top: 5%;
-  padding-bottom: 10%;
-}
+  button:active {
+    transform: scale(0.8);
+  }
 
-.ashtray {
-  margin: 2% 10% 2% 10%;
-}
+  button:hover {
+    color: grey;
+  }
 
-.feras {
-    margin: 2% 10% 2% 10%;
-}
+  .btnleft {
+      margin-top: 40vh;
+    }
 
-.photos {
-  margin: 1em;
-}
+  .btnright {
+      margin-top: 40vh;
+  }
 
-.photos img {
-  width: 100%;
-  height: auto;
-  margin: 1em;
-}
+
 .footer {
   margin-bottom: 20px;
   width: 100%;
